@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--
+        This controls the modal dialog for creating a new searchlist
+        from the searchlist selection dialog when adding a new video
+        to a searchlist. If "Create New Searchlist" is tapped, this
+        window comes up. This is where this dialog box title text
+        color is controlled.
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dialog_create_list"
+        android:textColor="@color/txt_blue_dark"
+        android:textAlignment="center"
+        android:id="@+id/alert_edit_title_text"
+        android:layout_gravity="center_horizontal" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_title"
+        android:hint="@string/dialog_name" />
+
+</LinearLayout>

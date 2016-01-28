@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Wavlite" parent="AppTheme">
+        <!--<item name="android:colorPrimaryDark">@color/primary_dark</item>-->
+        <!--<item name="android:colorAccent">@color/accent</item>-->
+    </style>
+</resources>
+

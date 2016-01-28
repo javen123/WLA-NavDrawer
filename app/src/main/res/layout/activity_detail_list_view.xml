@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wavlite.WLAndroid.ui.DetailListView"
+    android:padding="@dimen/dp0">
+
+    <include android:id="@+id/app_bar" layout="@layout/toolbar" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+    <!-- can I use a text view here instead? -->
+    <ListView
+        android:id="@+id/detail_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:dividerHeight="@dimen/dp1"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+
+    <!-- Button layout container with Buttons -->
+    <LinearLayout
+        android:id="@+id/delete_mass_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp56"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolbar_background"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:weightSum="4"
+        android:paddingLeft="@dimen/dp3"
+        android:paddingRight="@dimen/dp3">
+
+        <!-- CANCEL -->
+        <Button
+            android:id="@+id/cancel_btn"
+            android:text="@string/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/txt_blue_dark" />
+
+        <!-- COPY -->
+        <Button
+            android:id="@+id/copy_to_btn"
+            android:text="@string/btn_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/txt_blue_dark" />
+
+        <!-- MOVE -->
+        <Button
+            android:id="@+id/move_to_btn"
+            android:text="@string/btn_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/txt_blue_dark" />
+
+        <!-- DELETE -->
+        <Button
+            android:id="@+id/delete_mass_btn"
+            android:text="@string/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/txt_red_dark" />
+
+    </LinearLayout><!-- /Button drawer and buttons layout -->
+
+</RelativeLayout>

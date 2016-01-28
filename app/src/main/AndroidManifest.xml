@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wavlite.WLAndroid" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.wavlite.WLAndroid.WLiteApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Wavlite" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
+        <activity
+            android:name="com.parse.ui.ParseLoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <!-- For more options, see https://www.parse.com/docs/android_guide#ui-login -->
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_ENABLED"
+                android:value="true"/>
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.wavlite.WLAndroid.ui.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.wavlite.WLAndroid.ui.MyLists"
+            android:label="@string/title_activity_my_lists"
+            android:parentActivityName="com.wavlite.WLAndroid.ui.MainActivity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:value=".ui.MainActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wavlite.WLAndroid.ui.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.wavlite.WLAndroid.ui.DetailListView"
+            android:label="@string/title_activity_detail_list_view"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.wavlite.WLAndroid.ui.MyLists" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wavlite.WLAndroid.ui.MyLists" />
+        </activity>
+
+
+        <activity
+            android:name="com.wavlite.WLAndroid.ui.SearchViewActivity"
+            android:label="@string/title_activity_search_view"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.wavlite.WLAndroid.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wavlite.WLAndroid.ui.MainActivity" />
+        </activity>
+
+
+    </application>
+</manifest>

@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp30"
+    android:paddingRight="@dimen/dp30"
+    android:paddingTop="@dimen/dp15"
+    android:paddingBottom="@dimen/dp15"
+    android:background="@color/ma_main_bkgnd"
+    tools:context="com.appsneva.WLAndroid.ui.SignUp">
+
+    <EditText
+        android:id="@+id/editTextUN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/dp25"
+        android:paddingTop="@dimen/dp25"
+        android:paddingRight="@dimen/dp25"
+        android:paddingBottom="@dimen/dp15"
+        android:hint="@string/form_un" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/editTextUN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/dp25"
+        android:paddingTop="@dimen/dp25"
+        android:paddingRight="@dimen/dp25"
+        android:paddingBottom="@dimen/dp15"
+        android:hint="@string/form_email" />
+
+    <EditText
+        android:id="@+id/editTextPW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/dp25"
+        android:paddingTop="@dimen/dp25"
+        android:paddingRight="@dimen/dp25"
+        android:paddingBottom="@dimen/dp15"
+        android:hint="@string/form_pw" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_signup"
+        android:layout_below="@+id/editTextPW"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp25"
+        android:paddingRight="@dimen/dp15"
+        android:paddingBottom="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp25"
+        android:background="@color/login_btn_background"
+        android:textColor="@color/login_btn_textColor"
+        android:textSize="@dimen/dp20"
+        android:textStyle="bold"
+        android:focusable="true" />
+
+
+    <!-- Text link "Login" - NO LONGER NEEDED, BUT KEEP FOR NOW
+    <TextView
+        android:id="@+id/textView"
+        android:text="Login (not yet linked)"
+        android:layout_below="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_centerHorizontal="true" />
+        -->
+</RelativeLayout>

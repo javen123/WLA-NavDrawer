@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ma_main_bkgnd"
+    tools:context="com.appsneva.WLAndroid.ui.LogIn"
+    android:paddingLeft="@dimen/dp30"
+    android:paddingRight="@dimen/dp30"
+    android:paddingTop="@dimen/dp15"
+    android:paddingBottom="@dimen/dp15">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUN"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/dp25"
+        android:paddingTop="@dimen/dp25"
+        android:paddingRight="@dimen/dp25"
+        android:paddingBottom="@dimen/dp15"
+        android:hint="@string/form_un" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPW"
+        android:layout_below="@+id/editTextUN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/dp25"
+        android:paddingTop="@dimen/dp25"
+        android:paddingRight="@dimen/dp25"
+        android:paddingBottom="@dimen/dp15"
+        android:hint="@string/form_pw" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_login"
+        android:id="@+id/btnLogIn"
+        android:layout_below="@+id/editTextPW"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp25"
+        android:paddingRight="@dimen/dp15"
+        android:paddingBottom="@dimen/dp25"
+        android:background="@color/login_btn_background"
+        android:textColor="@color/login_btn_textColor"
+        android:textSize="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp35"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_signup"
+        android:id="@+id/btnSignIn"
+        android:layout_below="@+id/editTextPW"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp25"
+        android:paddingRight="@dimen/dp15"
+        android:paddingBottom="@dimen/dp25"
+        android:background="@color/login_btn_background"
+        android:textColor="@color/login_btn_textColor"
+        android:textSize="@dimen/dp14"
+        android:layout_marginTop="@dimen/dp150" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ma_main_bkgnd">
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+    <ListView
+        android:id="@+id/my_list_titles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:longClickable="true"
+        android:dividerHeight="@dimen/dp1" />
+
+
+    <TextView
+        android:id="@+id/no_list_text"
+        android:text="@string/no_list_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/delete_myLists_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolbar_background"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/mylist_massCancel_btn"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/txt_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/mylist_massDelete_btn"
+            android:text="@string/btn_delete"
+            android:textColor="@color/txt_red_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

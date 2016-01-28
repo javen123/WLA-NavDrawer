@@ -1,0 +1,36 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MyLists">
+
+    <item
+        android:id="@+id/ml_menu_search"
+        android:title="@string/menu_search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="1"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+    <item
+        android:id="@+id/ml_menu_create_list"
+        android:title="@string/menu_create"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/ml_action_logout"
+        android:title="@string/menu_logout"
+        android:icon="@drawable/ic_logout"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom" />
+
+    <!-- Mass Edit Link for My Searchlists (not yet implemented)
+    <item
+        android:id="@+id/ml_edit_my_list"
+        android:title="menu_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:orderInCategory="3"
+        app:showAsAction="ifRoom" />-->
+
+</menu>

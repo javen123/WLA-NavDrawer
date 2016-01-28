@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp16"
+    android:orientation="horizontal"
+    android:id="@+id/detail_list_row"
+    android:animateLayoutChanges="true"
+    android:weightSum="6">
+
+<!--
+    This file controls the UI components for the Detailed List View. Use this to change text color
+    and other UI components, such as the video image thumbnails
+-->
+    <ImageView
+        android:id="@+id/detail_thumbnail"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|left"
+        android:scaleType="fitCenter"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp60"
+        android:src="@drawable/place_holder"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="@color/primary"
+        android:layout_weight="2" />
+
+    <TextView
+        android:textColor="@color/txt_blue_xlite"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_title"
+        android:maxLines="3"
+        android:layout_weight="3" />
+
+    <CheckBox
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox1"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal|right" />
+
+    <!--<TextView android:id="@+id/video_description"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/thumbnail"-->
+    <!--android:maxLines="2"-->
+    <!--android:layout_weight="2"-->
+    <!--android:textSize="15sp"-->
+    <!--android:paddingTop="5dp" />-->
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_new_search"
+
+            android:title="@string/menu_search" />
+        <item
+            android:id="@+id/nav_my_lists"
+
+            android:title="@string/menu_mylists" />
+        <item
+            android:id="@+id/nav_create_lists"
+
+            android:title="@string/menu_create_list" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <menu>
+            <item
+                android:id="@+id/log_out"
+                android:title="@string/menu_logout"/>
+        </menu>
+     </group>
+</menu>

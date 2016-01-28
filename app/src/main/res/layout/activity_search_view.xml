@@ -1,0 +1,34 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appsneva.WLAndroid.ui.SearchViewActivity">
+
+    <include android:id="@+id/app_bar" layout="@layout/toolbar" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+    <ListView
+        android:id="@+id/videos_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginLeft="@dimen/dp0"
+        android:layout_marginRight="@dimen/dp0"
+        android:layout_marginBottom="@dimen/dp0"
+        android:headerDividersEnabled="true"
+        android:dividerHeight="@dimen/dp1"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:drawSelectorOnTop="false" />
+
+</RelativeLayout>

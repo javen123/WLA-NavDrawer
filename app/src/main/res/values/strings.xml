@@ -1,0 +1,189 @@
+<resources>
+    <!--
+        All string resources for all files contained within the "/app"
+        directory. The "/ParseLoginUI" will have it's own set of string
+        resources (but there are the DEV and API keys in this resource
+        file as well that are located at the bottom) such as resource
+        strings for the login/registration forms. Each section will be
+        separated by 2 blank lines for readability
+    -->
+
+
+    <!-- Application name and version strings -->
+    <string name="app_name">Wavlite</string>
+    <string name="app_version">Wavlite 1.0.0</string>
+
+
+    <!-- General application string resources
+         Before we publish this off, we should definitely go through
+         this section because of some repetition, plus they can most
+         likely be moved to a more appropriate section (I can slowly
+         implement this as I move along through UI stuff)
+    -->
+    <string name="facebook_app_id">1620600621538109</string>
+    <string name="searchable_hint">Wavlite Media Search</string>
+    <string name="title_activity_my_lists">My Searchlists</string>
+    <string name="title_activity_detail_list_view">Detailed Searchlist View</string>
+    <string name="title_list_text">Medium Text</string>
+
+
+    <!-- Menu Item Strings (used ONLY in menu layouts) -->
+    <string name="menu_create">Create Searchlist</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_create_list">Create New List</string>
+    <string name="menu_mylists">My Searchlists</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_search">New Search</string>
+    <string name="menu_settings">Settings</string>
+
+
+    <!--
+        Button resources for dialogs and layout views
+        *** NOTE: Button names are alphabetized by name
+            after the btn_ prefix (btn_[value]) ***
+    -->
+    <string name="btn_add">Add</string>
+    <string name="btn_blues">BLUES</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_copy">Copy</string>
+    <string name="btn_country">COUNTRY</string>
+    <string name="btn_create">Create</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_hiphop">HIP-HOP</string>
+    <string name="btn_jazz">JAZZ</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_later">Later</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_move">Move</string>
+    <string name="btn_rename">Rename</string>
+    <string name="btn_rnb">R &amp; B</string>
+    <string name="btn_rock">ROCK</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_signup">Sign Up!</string>
+
+    <!-- button content descriptions -->
+    <string name="btn_delete_cd">Close Button</string>
+
+
+    <!-- Toast Messages -->
+    <string name="toast_empty_list">Empty Searchlist</string>
+    <string name="toast_video_saved">Saved! Searchlist Updated</string>
+    <string name="toast_failed_video_init">Failed to initialize Youtube Player</string>
+
+
+    <!-- Form Resources (We won't need these as we're using parse to login
+         via social media, but I don't want to remove them in the possible
+         off chance that we may need them down the road. I will seek these
+         out and rename them to form_un, form_pw, form_email and will use
+         this naming convention for any future form input needs, such as I
+         want to add a "profile settings" page so people can update their
+         registration information (changing passwords for instance), while
+         I continue to tighten up the UI.
+    -->
+    <string name="form_un">Username</string>
+    <string name="form_pw">Password</string>
+    <string name="form_email">Email</string>
+
+
+    <!-- Signup Activity Strings -->
+    <string name="signup_login_text">Already have an account? Login (NOT SET UP)</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="signUpErrorMsg">Please fill out all fields</string>
+    <string name="signUpErrorTitle">Oops!</string>
+    <string name="no_list_text">No Searchlists available</string>
+
+
+    <!-- Login Activity Strings -->
+    <string name="title_activity_log_in">Log In</string>
+    <string name="signup_btn_text">No Account? Sign Up Now!</string>
+    <string name="login_btn_text">Login</string>
+
+
+    <!-- Alert Dialog strings -->
+    <string name="builder_title">Wavlite Searchlist</string>
+    <string name="builder_item">Wavlite Searchlist Item</string>
+    <string name="builder_delete_confirmation">Delete? (cannot undo!)</string>
+    <string name="builder_mdel_confirm">Delete Selected? (NO UNDO!)</string>
+    <string name="builder_del_sl_confirm">Delete Searchlist (NO UNDO!)</string>
+    <string name="builder_ok">OK</string>
+    <string name="builder_err_title">Something went wrong</string>
+    <string name="dialog_create_list">Create a new Searchlist\n</string>
+    <string name="dialog_name">Name of Searchlist</string>
+    <string name="dialog_title_oops">Oops!</string>
+    <string name="edit_list_title">Edit Title</string>
+    <string name="errorOK">OK</string>
+    <string name="alert_create_list">Create Searchlist</string>
+    <string name="my_list_title">My Searchlists</string>
+    <string name="title_activity_alert_new_list">AlertNewList</string>
+
+
+    <!-- AlertDialogFragment.java Dialogs (there are quite a few more string
+         resources here to add). Below does not include the specific activity
+         resources - they have their own sections below this one.
+    -->
+    <string name="select_searchlist">Select Searchlist</string>
+    <string name="title_activity_search_view">Wavlite Search</string>
+    <string name="main_menu_create_seachlist">Create SearchList</string>
+
+
+    <!-- MainActivity.java Dialog Boxes. All dialogs begin with ma_ -->
+    <string name="ma_error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="ma_searchOnYoutube">New Hit Music</string>
+    <string name="ma_dialog_congrats">Congrats!</string>
+    <string name="ma_dialog_msg_congrats">You\'ve created your first Searchlist!</string>
+    <string name="ma_dialog_add">Add to (or create a new) Searchlist</string>
+    <string name="ma_logo_cd">Wavlite Logo (Large)</string>
+
+
+    <!-- MyLists.java Dialog Boxes. All dialogs begin with ml_ -->
+    <string name="ml_dialog_rename">- Rename Searchlist -</string>
+    <string name="ml_dialog_updated">Updated</string>
+    <string name="ml_dialog_msg_updated">Your searchlist has been updated</string>
+    <string name="ml_dialog_name">Name Your Searchlist</string>
+    <string name="ml_dialog_hint_name">New Searchlist Title</string>
+    <string name="ml_dialog_save">Saved!</string>
+    <string name="ml_dialog_msg_save">Your Searchlist has been created</string>
+
+
+    <!-- DetailedListView.java Dialog Boxes. All strings begin with dlv_ -->
+    <string name="dlv_dialog_title">Wavlite Searchlist Item</string>
+    <string name="dlv_toast_saved">Video(s) Saved!</string>
+    <string name="dlv_dialog_copy">Copy To Searchlist:</string>
+    <string name="dlv_dialog_move">Move To Searchlist:</string>
+
+
+    <!-- ParseUI Login Credentials -->
+    <string name="parse_app_id">ykrFkxjHcVz8j8oBSc8ZFpXH0gSu99vkKEhzt6Hs</string>
+    <string name="parse_client_key">pmzgjReSbDsmwvZXLNoqNGXtIqo5ZCbu04WwuSrM</string>
+    <string name="twitter_consumer_key">r7cJ69aO0Y7LaZuR6g8DmzBpJ</string>
+    <string name="twitter_consumer_secret">AvCnihJJ0PjbvcjAM8hCjG9xxZjhcrSypJyP7bUSprInQyle3Y</string>
+
+    <!-- ParseUI String Resources -->
+    <string name="parse_LoginButtonText">Login</string>
+    <string name="parse_SignupButtonText">Sign Up!</string>
+    <string name="parse_LoginHelpText">Forgot password?</string>
+    <string name="parse_LoginInvalid">Email and/or Password Mismatch</string>
+    <string name="parse_SignupSubmitButtonText">Register</string>
+
+    <!-- NavDrawer -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- NOT USED. TRIPLE CHECK -->
+    <string name="PlayerTitle">Wavlite Player</string>
+    <string name="searchable_label">Searchlist</string>
+    <string name="search_hint">search</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_search">Search Activity</string>
+    <string name="search_title">Search</string>
+    <string name="main_menu_action_list">My Searchlists</string>
+    <string name="button_add">Add</string>
+    <string name="button_create">Create</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_later">Later</string>
+
+</resources>

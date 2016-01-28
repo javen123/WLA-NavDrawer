@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    As with the dimens.xml, each activity will have it's own sub-section here for anything
+    that is specific to an activity that is not a global style (to help organization)
+-->
+<resources>
+    <!-- general items (we can slowly refactor these to their sections -->
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+
+    <!-- use grey_9E instead -->
+    <color name="accent">#9E9E9E</color>
+    <!-- use txt_blue_xlite instead -->
+    <color name="primary_text">#C7E0FC</color>
+    <!-- use txt_grey_C8 instead -->
+    <color name="secondary_text">#C8C8C8</color>
+
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+
+    <!-- global main colors (red, white, blue, etc.) -->
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
+    <color name="grey">#999999</color>
+    <color name="grey_9E">#FF9E9E9E</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+
+
+    <!-- text color variations (for global usage) -->
+    <color name="txt_white">#FFFFFFFF</color>
+    <color name="txt_black">#FF000000</color>
+    <color name="txt_grey_33">#FF333333</color>
+    <color name="txt_grey_99">#FF999999</color>
+    <color name="txt_grey_9E">#FF9E9E9E</color>
+    <color name="txt_grey_CC">#FFCCCCCC</color>
+    <color name="txt_grey_C8">#FFC8C8C8</color>
+    <color name="txt_blue_xlite">#C7E0FC</color>
+    <color name="txt_blue_dark">#122040</color>
+    <color name="txt_red_dark">#4B0004</color>
+
+
+    <!-- Main Activity styles -->
+    <color name="ma_main_bkgnd">#FF253E66</color>
+    <color name="ma_btnV_bkgnd">#122040</color>
+
+
+    <!-- Toolbar primary and secondary text -->
+    <color name="toolbar_text_primary">#FFC7E0FC</color>
+    <color name="toolbar_text_secondary">#FFC8C8C8</color>
+    <color name="toolbar_background">#FF122040</color>
+
+
+    <!-- Login Activity styles -->
+    <color name="login_btn_background">#FF253E66</color>
+    <color name="login_btn_textColor">#FFFFFFFF</color>
+
+
+    <!-- Signup Activity styles -->
+    <color name="signup_text_dark">#FF555555</color>
+</resources>
